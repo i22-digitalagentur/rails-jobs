@@ -28,39 +28,47 @@ module I22
 
   # well, you know that one, don't you?
   class StandardRailsJob
-    def self.inherited(_subclass)
-      description
-    end
+    class << self
+      def inherited(_subclass)
+        description
+      end
 
-    def self.delegate(*_args)
-      # no op
-    end
+      def apply(_your_email)
+        puts <<~APPLY
+          Einfach per EMail an kontakt@i22.de bewerben!
+        APPLY
+      end
 
-    def self.description
-      puts <<~END
-        Deine Aufgaben sind
+      def delegate(*_args)
+        # no op
+      end
 
-        * Konzeption und Entwicklung von komplexen Software- und E-Commerce-Lösungen, Backend-Systemen,
-        Intranetanwendungen und Schnittstellen auf Basis von Ruby on Rails – maßgeschneidert und
-        nicht von der Stange
-        * Im Team komplexe Fragestellungen und Entwicklungen erarbeiten und vorantreiben
-        * Performancesteigerung und Qualitätsmanagement mit Hilfe verschiedener Tools
-        * Einbindung in den gesamten Entwicklungsprozess unserer Projekte: von Anforderungsanalyse,
-        Konzeption und Aufwandsschätzung über Implementierung bis zur technischen Dokumentation
-        und dem fortlaufenden Testing behältst du alles im Blick
+      def description
+        puts <<~DESCRIPTION
+          Deine Aufgaben sind
 
-        Das bringst du mit
+          * Konzeption und Entwicklung von komplexen Software- und E-Commerce-Lösungen, Backend-Systemen,
+          Intranetanwendungen und Schnittstellen auf Basis von Ruby on Rails – maßgeschneidert und
+          nicht von der Stange
+          * Im Team komplexe Fragestellungen und Entwicklungen erarbeiten und vorantreiben
+          * Performancesteigerung und Qualitätsmanagement mit Hilfe verschiedener Tools
+          * Einbindung in den gesamten Entwicklungsprozess unserer Projekte: von Anforderungsanalyse,
+          Konzeption und Aufwandsschätzung über Implementierung bis zur technischen Dokumentation
+          und dem fortlaufenden Testing behältst du alles im Blick
 
-        * Sehr gute Kenntnisse in Ruby on Rails
-        * Da wir direkt in 2 Teams Unterstützung suchen: du kommst entweder aus dem Bereich
-        Full-Stack Development und bringst ebenfalls gute Kenntnisse in JavaScript, HTML und
-        CSS mit oder aber du bist Backend-Profi mit guter Expertise im Bereich Datenbanken (SQL),
-        gerne auch mit Zertifizierung
-        * Pluspunkte sind: Erfahrungen mit gängigen Javascript-/Frontend-/Test-Frameworks
-        (z.B. Bootstrap, jQuery, ReactJS, MiniTest, Rspec etc.), Versionierung mit Git/Gitlab
-        * Verantwortungsbewusste und selbständige Arbeitsweise
-        * Gute Deutschkenntnisse in Wort und Schrift
-      END
+          Das bringst du mit
+
+          * Sehr gute Kenntnisse in Ruby on Rails
+          * Da wir direkt in 2 Teams Unterstützung suchen: du kommst entweder aus dem Bereich
+          Full-Stack Development und bringst ebenfalls gute Kenntnisse in JavaScript, HTML und
+          CSS mit oder aber du bist Backend-Profi mit guter Expertise im Bereich Datenbanken (SQL),
+          gerne auch mit Zertifizierung
+          * Pluspunkte sind: Erfahrungen mit gängigen Javascript-/Frontend-/Test-Frameworks
+          (z.B. Bootstrap, jQuery, ReactJS, MiniTest, Rspec etc.), Versionierung mit Git/Gitlab
+          * Verantwortungsbewusste und selbständige Arbeitsweise
+          * Gute Deutschkenntnisse in Wort und Schrift
+        DESCRIPTION
+      end
     end
   end
 
