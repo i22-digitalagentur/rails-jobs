@@ -67,6 +67,23 @@ module I22
           (z.B. Bootstrap, jQuery, ReactJS, MiniTest, Rspec etc.), Versionierung mit Git/Gitlab
           * Verantwortungsbewusste und selbständige Arbeitsweise
           * Gute Deutschkenntnisse in Wort und Schrift
+
+          Wir bieten dir
+
+          * Abwechslungsreiche, innovative Projekte mit echter Relevanz für unsere Kunden und viel
+          Verantwortung - da wir unsere Anwendungen zum größten Teil selbst hosten
+          * Ein motivierendes und fachlich anspruchsvolles Umfeld in einer Agentur mit starkem
+          Fokus auf Softwareentwicklung
+          * Gegenseitige Förderung und Austausch in einem 30-köpfigen Entwicklerteam (Frontend & Backend)
+          und dem größten Ruby-Team der Region
+          * 10%-Benefit-Time - du bestimmst selbst, womit du 10% deiner Arbeitszeit verbringst- z.B. für
+          die eigene Weiterbildung, den Austausch mit Kollegen, für eigene Projekte usw.
+          * Freie Auswahl deiner Hard- und Software inkl. Wunschzubehör - auch zur privaten Nutzung
+          * Eine top ausgestattete IT-Umgebung und moderne Tools zur Zusammenarbeit
+          * Einfache Anreise: Bus/Bahn bis Konrad-Adenauer-Platz und eigene Parkplätze
+          * Ein attraktives Gehalt, flexible Arbeitszeiten (inkl. Remote-Möglichkeit)
+          und vergütete Überstunden
+          * Bezuschussung von Weiterbildungsmöglichkeiten (z.B. Kongressbesuche)
         DESCRIPTION
       end
     end
