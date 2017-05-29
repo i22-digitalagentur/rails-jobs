@@ -12,9 +12,12 @@ module I22
   end
 
   # no comment
-  module YoutubeCatVideo
-    def self.included(_included_in)
-      puts "\nKatzenvideos!"
+  module Youtube
+    # no comment, either
+    module CatVideo
+      def self.included(_included_in)
+        puts "\nKatzenvideos!"
+      end
     end
   end
 
@@ -27,6 +30,10 @@ module I22
   class StandardRailsJob
     def self.inherited(_subclass)
       description
+    end
+
+    def self.delegate(*_args)
+      # no op
     end
 
     def self.description
@@ -57,8 +64,11 @@ module I22
     end
   end
 
-  # see: https://www.google.de/maps/place/Brueckenforum/@50.7386051,7.1130867,17z
-  class BonnBeuel
+  # see: https://de.wikipedia.org/wiki/Bonn
+  module Bonn
+    # see: https://www.google.de/maps/place/Brueckenforum/@50.7386051,7.1130867,17z
+    class Beuel
+    end
   end
 
   # see: https://de.wikipedia.org/wiki/Rheinuferpromenade_(Beuel)
