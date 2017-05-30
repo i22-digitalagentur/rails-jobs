@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# Real name is i22, but ruby daes not allow modules to start with a lowercase letter
+# Our real name is i22, but ruby does not allow modules to start with a lowercase letter
 module I22
-  # A developer should have time outside the project flow to pursue her own interests.
-  # More often than not these side projects help the company, so we think it's a fair
-  # deal, and it makes for happy developers.
+  # We want our developers to have time to pursue their own interests and work on self-chosen projects
+  # e.g. new cool programming languages. Many of these projects positively affect the companys business
+  # and innovation, so we think it's a fair deal, and it makes for happy developers.
   module TenPercentSlackTime
     def self.included(_included_in)
       puts "\n10% Entwicklerzeit!"
@@ -21,7 +21,7 @@ module I22
     end
   end
 
-  # We cook. In a real kitchen. With our colleagues. On two opposings 4 flame stoves.
+  # We cook. In a real kitchen. With our colleagues. On two opposing 4 flame stoves.
   # Epic battles, including the clean up.
   module KitchenAndColleagues
   end
@@ -35,7 +35,7 @@ module I22
 
       def apply(_your_email)
         puts <<~APPLY
-          Einfach per EMail an kontakt@i22.de bewerben!
+          Einfach per EMail an jobs@i22.de bewerben!
         APPLY
       end
 

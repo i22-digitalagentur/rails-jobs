@@ -25,6 +25,6 @@ $ cd rails-jobs
 $ ruby job.rb
 $ echo "I'm interested, please contact me." > applicants.txt
 $ git add . ; git commit -m "Add me" &&
-> git format-patch HEAD^ -o email/ --to=kontakt@i22.de &&
+> git format-patch HEAD^ -o email/ --to=jobs@i22.de &&
 > git send-email --compose email/*
 ```
