@@ -2,9 +2,9 @@
 
 # Our real name is i22, but ruby does not allow modules to start with a lowercase letter
 module I22
-  # We want our developers to have time to pursue their own interests and work on self-chosen projects
-  # e.g. new cool programming languages. Many of these projects positively affect the companys business
-  # and innovation, so we think it's a fair deal, and it makes for happy developers.
+  # For our developers we have a great thing called slack time, which means having time to pursue
+  # your own programming interests and work on self-chosen projects.
+  # This has a great innovative impact for the company and keeps our developers happy.
   module TenPercentSlackTime
     def self.included(_included_in)
       puts "\n10% Entwicklerzeit!"
